@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&family=Red+Hat+Display&display=swap');
+
+.footer {
+    width: 100%;
+    min-height: 50vh;
+    padding: 100px 100px 0px 100px;
+    font-family: 'Quattrocento', serif;
+    font-family: 'Red Hat Display', sans-serif;
+
+    .upperTitles {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .section {
+            .headTitle {
+                font-size: 24px;
+                color: #111827;
+                font-family: 'Quattrocento', serif;
+            }
+
+            .title {
+                margin-top: 25px;
+                font-size: 16px;
+                color: #4B5563;
+                font-family: 'Red Hat Display', sans-serif;
+            }
+
+            .icons {
+                margin-top: 25px;
+                width: 200px;
+                display: flex;
+                justify-content: space-between;
+
+                .icon {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    font-size: 18px;
+                    color: white;
+                    background: black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &:nth-child(1) {
+                        background: #3B82F6;
+                    }
+                    &:nth-child(2) {
+                        background: #38BDF8;
+                    }
+                    &:nth-child(3) {
+                        background: #EF4444;
+                    }
+                    &:nth-child(4) {
+                        background: #2563EB;
+                    }
+                }
+            }
+        }
+    }
+
+    .downTitles {
+        width: 100%;
+        padding: 50px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+            margin-top: 25px;
+            font-size: 16px;
+            color: #4B5563;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+    }
+}

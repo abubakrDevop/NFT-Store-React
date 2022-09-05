@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&family=Red+Hat+Display&display=swap');
+
+.headMainBox {
+    width: 100%;
+    min-height: 118vh;
+    overflow: hidden;
+    padding: 140px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .headTitle {
+        font-family: 'Quattrocento', serif;
+        color: #111827;
+        font-size: 64px;
+        margin-top: 6px;
+        &:nth-child(2) {
+            color: #6366F1;
+        }
+    }
+
+    .title {
+        margin-top: 28px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 20px;
+        color: #4B5563;
+        text-align: center;
+        line-height: 1.7;
+    }
+
+    .buttons {
+        margin-top: 50px;
+        width: 330px;
+        display: flex;
+        justify-content: space-between;
+
+        .button {
+            position: relative;
+            width: 156px;
+            height: 54px;
+            background: linear-gradient(to right, #7f56f0, #6366F1);
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-weight: 600;
+            overflow: hidden;
+            transition: .5s ease-in-out;
+            &:hover {
+                color: white !important;
+            }
+        }
+
+        .hover1 {
+            &::before {
+                position: absolute;
+                content: '';
+                top: -50%;
+                left: 0px;
+                width: 100%;
+                height: 50%;
+                background: #9956f0;
+                transition: .5s ease-in-out;
+            }
+            &:hover::before {
+                top: 100% !important;
+            }
+        }
+
+        .hover2 {
+            background: none;
+            border: solid 2px #6366F1;
+            color: #6366F1;
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 0%;
+                background: #6366F1;
+                transition: .3s ease-in-out;
+                z-index: -1;
+            }
+            &:hover::before {
+                height: 100% !important;
+            }
+        } 
+    }
+
+    .otherInfo {
+        margin-top: 57px;
+        width: 640px;
+        display: flex;
+        justify-content: space-between;
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .infoTitle {
+            font-size: 56px;
+            font-family: 'Quattrocento', serif;
+            color: #111827;
+        }
+
+        .lowerTitle {
+            color: #4B5563;
+            margin-top: 7px;
+            font-size: 16px;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+    }
+}

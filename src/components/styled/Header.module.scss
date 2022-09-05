@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+.header {
+    width: 100%;
+    height: 54px;
+    background: #262626;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        width: 152px;
+        height: 18px;
+    } 
+
+    .button {
+        width: 93px;
+        height: 31px;
+        background: #82B440;
+        color: white;
+        font-family: sans-serif;
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        box-shadow: 0 2px 0 #6f9a37;
+    }
+}
+
+.lowerHeader {
+    width: 100%;
+    height: 83px;
+    padding: 0px 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .lowerLogo {
+        width: 170px;
+        height: 38px;
+    }
+
+    .lowerMenuBox {
+        width: 650px;
+        display: flex;
+        justify-content: space-between;
+
+        .menuLinks {
+            text-decoration: none;
+            font-family: 'Red Hat Display', sans-serif;
+            color: #111827;
+            font-weight: 600;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+
+            .icon {
+                position: relative;
+                left: 6px;
+                width: 15px;
+                opacity: .5;
+                transition: .5s;
+            }
+
+            .activeIcon {
+                transform: rotate(180deg);
+            }
+        }
+
+        .iconBox {
+            position: relative;
+            left: -30px;
+            width: 60px;
+            display: flex;
+            justify-content: space-between;
+
+            .icon {
+                font-size: 23px;
+            }
+        }
+    }
+
+    .apearBoxes {
+        position: absolute;
+        top: 120px;
+        left: 51%;
+        display: flex;
+
+        .apearExploreBox {
+            width: 150px;
+            min-height: 100px;
+            border-top: solid 2px #6366F1;
+            background: white;
+            display: none;
+            flex-direction: column;
+            padding: 5px 20px;
+            transform: translateY(-30px);
+
+            .exploreTitles {
+                margin-top: 10px;
+                text-decoration: none;
+                font-size: 16px;
+                color: #111827;
+                font-weight: 600;
+                font-family: 'Red Hat Display', sans-serif;
+            }
+        }
+
+        .apearPagesBox {
+            position: absolute;
+            left: 130px;
+            width: 150px;
+            min-height: 100px;
+            border-top: solid 2px #6366F1;
+            background: white;
+            display: none;
+            flex-direction: column;
+            padding: 0px 20px;
+            transform: translateY(-30px);
+
+            .pagesTitles {
+                margin-top: 15px;
+                text-decoration: none;
+                font-size: 16px;
+                color: #111827;
+                font-weight: 600;
+                font-family: 'Red Hat Display', sans-serif;
+            }
+        }
+
+        .apearActive {
+            display: flex;
+            transform: translateY(0px);
+        }
+    }
+}

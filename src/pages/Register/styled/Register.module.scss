@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&family=Red+Hat+Display&display=swap');
+
+.container {
+    width: 100%;
+    min-height: 115vh;
+    padding: 0px 0px 50px 0px;
+    display: flex;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .headTitle {
+        margin-top: 80px;
+        font-family: 'Quattrocento', serif;
+        font-size: 64px;
+        color: #111827;
+    }
+
+    .title {
+        margin-top: 15px;
+        text-decoration: none;
+        font-family: 'Red Hat Display', sans-serif;
+        color: #4B5563;
+        font-size: 16px;
+        &:nth-child(2) {
+            color: #6366F1;
+        }
+    }
+
+    .form {
+        width: 778px;
+        padding: 0px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .inputBox {
+            margin-top: 17px;
+            width: 100%;
+            height: 50px;
+            border: solid 1px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            padding: 0px 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .icon {
+                font-size: 25px;
+                color: #6366F1;
+            }
+
+            .input {
+                width: 95%;
+                height: 100%;
+                border: none;
+                background: none;
+                outline: none;
+            }
+        }
+
+        .checkboxField {
+            margin-top: 15px;
+            align-self: flex-start;
+
+            .checkbox {
+                position: relative;
+                top: 1px;
+            }
+
+            .checkTitle {
+                margin-left: 5px;
+                color: #4B5563;
+                font-size: 16px;
+                font-family: 'Red Hat Display', sans-serif;
+            }
+        }
+
+        .errors {
+            position: relative;
+            top: 7px;
+            height: 8px;
+            color: red !important;
+            align-self: flex-start;
+            font-size: 14px;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+
+        .registerBtn {
+            position: relative;
+            margin-top: 15px;
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border: none;
+            overflow: hidden;
+            background: #6366F1;
+            transition: .2s ease-in-out;
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 0%;
+                background: #4a4df5;
+                transition: .5s ease-in-out;
+                border-bottom-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+                z-index: -1;
+            }
+            &:hover {
+                color: white;
+                z-index: 1;
+            }
+            &:hover::before {
+                height: 180% !important;
+            }
+        }
+
+        .title {
+            margin-top: 15px;
+            font-family: 'Red Hat Display', sans-serif;
+
+            .loginLink {
+                color: #6366F1;
+                text-decoration: none;
+                text-shadow: 0 0 5px #6366F1;
+            }
+        }
+
+        .buttons {
+            margin-top: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .button {
+                width: 49.5%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                border: solid 1px rgba(0, 0, 0, 0.5);
+                border-radius: 5px;
+                font-family: 'Red Hat Display', sans-serif;
+                cursor: pointer;
+                &:nth-child(2) {
+                    background: blue;
+                    color: white;
+                    border: none;
+                }
+
+                .icon {
+                    position: relative;
+                    left: -5px;
+                    width: 19px;
+                    height: 19px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&family=Red+Hat+Display&display=swap');
+
+.category {
+    width: 100%;
+    min-height: 40vh;
+    padding: 0px 80px 0px 100px;
+    overflow: hidden;
+    font-family: 'Quattrocento', serif;
+    font-family: 'Red Hat Display', sans-serif;
+
+    .headTitle {
+        margin-left: 20px;
+        color: #111827;
+        font-size: 40px;
+        font-family: 'Quattrocento', serif;
+    }
+
+    .cards {
+        padding: 50px 0px 0px 0px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+            position: relative;
+            width: 214px;
+            height: 192px;
+            border: solid 1px rgba(0, 0, 0, 0.466);
+            border-radius: 12px;
+            margin: 0px 10px 20px 10px;
+            overflow: hidden;
+            text-decoration: none;
+
+            .image {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .title {
+                margin-top: 110px;
+                margin-left: 20px;
+                color: black;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Quattrocento', serif;
+            }
+
+            .subTitle {
+                margin-top: 10px;
+                margin-left: 20px;
+                color: black;
+                font-size: 16px;
+                font-family: 'Red Hat Display', sans-serif;
+            }
+        }
+    }
+}

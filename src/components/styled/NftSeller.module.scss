@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&family=Red+Hat+Display&display=swap');
+
+.nftSeller {
+    width: 100%;
+    min-height: 70vh;
+    padding: 0px 85px;
+    overflow: hidden;
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Quattrocento', serif;
+
+    .headTitle {
+        margin-left: 15px;
+        font-family: 'Quattrocento', serif;
+        color: #111827;
+        font-size: 40px;
+    }
+
+    .flex {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cardBox {
+        width: 274px;
+        margin: 0px 10px 30px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .headImage {
+            width: 100%;
+            height: 92px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .section {
+            margin-top: 20px;
+            padding: 0px 15px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            &:nth-child(3) {
+                margin-top: 15px;
+            }
+
+            .autorImage {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+            }
+
+            .name {
+                color: #111827;
+                font-size: 16px;
+                font-family: 'Quattrocento', serif;
+            }
+
+            .url {
+                color: #4B5563;
+                font-size: 12px;
+                font-family: 'Red Hat Display', sans-serif;
+            }
+
+            .text1 {
+                color: #111827;
+                font-family: 'Quattrocento', serif;
+                font-size: 16px;
+            }
+
+            .text2 {
+                color: #6B7280;
+                font-family: 'Red Hat Display', sans-serif;
+                font-size: 16px;
+            }
+        }
+
+        .button {
+            margin-top: 30px;
+            width: 121px;
+            height: 40px;
+            border-radius: 10px;
+            color: #6366F1;
+            font-weight: bold;
+            border: none;
+            font-family: 'Red Hat Display', sans-serif;
+            transition: .3s;
+            &:hover {
+                color: white;
+                background: linear-gradient(to right, #7f56f0, #6366F1);
+            }
+        }
+    }
+}

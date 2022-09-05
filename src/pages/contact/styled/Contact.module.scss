@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&family=Red+Hat+Display&display=swap');
+
+.contact {
+    width: 100%;
+    min-height: 150vh;
+    padding: 0px 0px 50px 0px;
+    overflow: hidden;
+    font-family: 'Quattrocento', serif;
+    font-family: 'Red Hat Display', sans-serif;
+
+    .padding {
+        padding: 0px 95px 0px 95px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headTitle {
+        margin-top: 80px;
+        font-size: 64px;
+        color: #111827;
+        font-family: 'Quattrocento', serif;
+    }
+
+    .subTitle {
+        margin-top: 15px;
+        font-size: 16px;
+        color: #4B5563;
+        text-decoration: none;
+        font-family: 'Red Hat Display', sans-serif; 
+        &:nth-child(2) {
+            color: #6366F1;
+        }
+    }
+
+    .headSection {
+        width: 100%;
+        padding: 118px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+
+        .section {
+            .titleBox {
+                position: relative;
+                top: -80px;
+                margin-top: 80px;
+
+                .headText {
+                    color: #111827;
+                    font-size: 32px;
+                    font-family: 'Quattrocento', serif;
+                }
+
+                .headText2 {
+                    font-size: 24px;
+                }
+
+                .text {
+                    margin-top: 18px;
+                    color: #4B5563;
+                    font-size: 16px;
+                    font-family: 'Red Hat Display', sans-serif; 
+                    display: flex;
+                    align-items: center;
+
+                    .icon {
+                        position: relative;
+                        left: -5px;
+                        font-size: 25px;
+                        margin-left: 5px;
+                    }
+                }
+
+                .text2 {
+                    line-height: 1.6;
+                }
+            }
+
+            .form {
+                width: 463px;
+                height: 627px;
+                padding: 40px;
+                border: solid 1px rgba(0, 0, 0, 0.301);
+                border-radius: 10px;
+                transition: .2s ease-in-out;
+                &:hover {
+                    border: solid 1px #6366F1;
+                }
+
+                .headText {
+                    color: #111827;
+                    font-size: 32px;
+                    font-family: 'Quattrocento', serif;
+                }
+
+                .text {
+                    margin: 20px 0px 20px 0px;
+                    color: #4B5563;
+                    font-size: 16px;
+                    font-family: 'Red Hat Display', sans-serif; 
+                }
+
+                .input {
+                    width: 100%;
+                    height: 48px;
+                    border: solid 1px rgba(0, 0, 0, 0.295);
+                    outline: none;
+                    border-radius: 10px;
+                    padding: 0px 15px;
+                    margin: 0px 0px 24px 0px;
+                    &::placeholder {
+                        font-size: 16px;
+                        font-family: 'Red Hat Display', sans-serif; 
+                        color: #11182762;
+                    }
+                }
+
+                .errors {
+                    border: solid 1px red !important;
+                }
+
+                .textarea {
+                    resize: none;
+                    padding: 15px 15px;
+                    height: 139px !important;
+                }
+
+                .button {
+                    width: 154px;
+                    height: 52px;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    color: white;
+                    border: none;
+                    font-family: 'Red Hat Display', sans-serif; 
+                    background: linear-gradient(to right, #7f56f0, #6366F1);
+                }
+            }
+        }
+    }
+}
