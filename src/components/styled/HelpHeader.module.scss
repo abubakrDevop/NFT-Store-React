@@ -77,6 +77,15 @@
     }
 }
 
+@media (max-width: 650px) {
+    .helpHeader {
+        .nav {
+            left: -500px;
+            width: 560px;
+        }
+    }
+}
+
 @media (max-width: 600px) {
     .helpHeader {
         .nav {

@@ -214,3 +214,194 @@
         }
     }
 }
+
+/* ----------- MEDIA ------------ */
+
+@media (max-width: 1000px) {
+    .exploreItems {
+        padding: 50px 0px 0px 0px;
+    
+        .header {
+            width: 100%;
+            padding: 0px 95px;
+            .headTitle {
+                font-size: 40px;
+            }
+    
+            .buttons {
+                width: 31%;
+            }
+        }
+        .footer {
+            padding: 0px 0px 100px 0px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .exploreItems {
+        padding: 50px 0px 0px 0px;
+    
+        .header {
+            padding: 0px 95px;
+            .headTitle {
+                font-size: 40px;
+            }
+    
+            .buttons {
+                width: 34%;
+                top: 0px;
+            }
+        }
+        .footer {
+            padding: 0px 0px 100px 0px;
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .exploreItems {
+        padding: 50px 0px 0px 0px;
+    
+        .header {
+            width: 100%;
+            padding: 0px 95px;
+            .headTitle {
+                font-size: 40px;
+            }
+    
+            .buttons {
+                width: 37%;
+            }
+        }
+        .footer {
+            flex-wrap: nowrap;
+            .cardBox {
+                width: 350px;
+                height: 430px;
+                margin: 0px 10px 0px 10px;
+                .image {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .exploreItems {
+        padding: 50px 0px 0px 0px;
+    
+        .header {
+            width: 100%;
+            padding: 0px 95px;
+            .headTitle {
+                font-size: 30px;
+            }
+    
+            .buttons {
+                width: 45%;
+                top: 2px;
+                .button {
+                    width: 57px;
+                    height: 30px;
+                    font-size: 13px;
+                    &:nth-child(2) {
+                        width: 115px;
+                    }
+                    &:nth-child(3) {
+                        width: 115px;
+                    }
+                }
+            }
+        }
+        .footer {
+            flex-wrap: nowrap;
+            .cardBox {
+                width: 500px;
+                height: 430px;
+                margin: 0px 10px 0px 10px;
+                .image {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .exploreItems {
+        .header {
+            width: 100%;
+            padding: 0px 35px;
+            .headTitle {
+                font-size: 30px;
+            }
+            .buttons {
+                width: 45%;
+                top: 2px;
+                .button {
+                    width: 57px;
+                    height: 30px;
+                    font-size: 13px;
+                }
+            }
+        }
+        .footer {
+            .cardBox {
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .exploreItems {
+        .footer {
+            .cardBox {
+                width: 430px;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .exploreItems {
+        .header {
+            flex-direction: column;
+            width: 100%;
+            padding: 0px 35px;
+            .headTitle {
+                font-size: 24px;
+            }
+            .buttons {
+                width: 50%;
+                top: 5px;
+                left: 2px;
+                .button {
+                    width: 50px;
+                    height: 25px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .footer {
+            .cardBox {
+                width: 345px;
+                .flex {
+                    padding: 0px 15px; 
+                }
+                .headTitle {
+                    margin-top: 5px;
+                }
+    
+                .flex2 {
+                    margin-top: 5px;
+                }
+                .buttons {
+                    padding: 20px 17px;
+                }
+            }
+        }
+    }
+}
