@@ -129,9 +129,7 @@
 
 @media (max-width: 414px) {
     .nftSeller {
-        position: relative;
-        top: -55px;
-        padding: 0px 15px;
+        padding: 15px 15px;
         .headTitle {
             font-size: 24px;
         }
@@ -140,7 +138,7 @@
             flex-wrap: nowrap;
         }
         .cardBox {
-            margin: 0px 10px 20px 10px;
+            margin: 0px 10px 0px 10px;
             width: 362px;
             .headImage {
                 height: 150px;
