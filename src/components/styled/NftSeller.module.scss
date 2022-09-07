@@ -94,3 +94,55 @@
         }
     }
 }
+
+/* ----------- MEDIA ------------ */
+
+@media (max-width: 820px) {
+    .nftSeller {
+        .cardBox {
+            width: 350px;
+            .headImage {
+                height: 100px;
+            }
+        }   
+    }
+}
+
+@media (max-width: 700px) {
+    .nftSeller {
+        .headTitle {
+            font-size: 30px;
+        }
+        .flex {
+            margin-top: 30px;
+            flex-wrap: nowrap;
+        }
+        .cardBox {
+            margin: 0px 10px 20px 10px;
+            width: 500px;
+            .headImage {
+                height: 150px;
+            }
+        }   
+    }
+}
+
+@media (max-width: 414px) {
+    .nftSeller {
+        padding: 0px 15px;
+        .headTitle {
+            font-size: 30px;
+        }
+        .flex {
+            margin-top: 20px;
+            flex-wrap: nowrap;
+        }
+        .cardBox {
+            margin: 0px 10px 20px 10px;
+            width: 362px;
+            .headImage {
+                height: 150px;
+            }
+        }   
+    }
+}
