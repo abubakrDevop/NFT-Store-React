@@ -81,6 +81,9 @@
 
             .icon {
                 font-size: 23px;
+                &:nth-child(3) {
+                    display: none;
+                }
             }
         }
     }
@@ -136,6 +139,34 @@
         .apearActive {
             display: flex;
             transform: translateY(0px);
+        }
+    }
+}
+
+/* ------------- MEDIA ------------- */
+
+@media (max-width: 1000px) {
+    .lowerHeader {        
+        .lowerMenuBox {
+            display: none !important;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .lowerHeader {
+        padding: 0px 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .lowerHeader {
+        height: 83px;
+        padding: 0px 20px;
+    
+        .lowerLogo {
+            width: 160px;
+            height: 35px;
         }
     }
 }

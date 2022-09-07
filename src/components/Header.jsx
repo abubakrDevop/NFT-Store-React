@@ -3,7 +3,8 @@ import cls from './styled/Header.module.scss'
 import { explore, pages } from './index'
 import { Link } from 'react-router-dom'
 import { ChevronDownIcon } from '@heroicons/react/outline'
-import {IoMdNotifications, IoMdSearch } from 'react-icons/io'
+import {IoMdNotifications, IoMdSearch, IoIosMenu } from 'react-icons/io'
+import HelpHeader from './HelpHeader'
 
 export default function Header() {
   const [exploreActive, setExploreActive] = React.useState(false)
@@ -26,7 +27,8 @@ export default function Header() {
 
       <header className={cls.lowerHeader}>
         <img className={cls.lowerLogo} src="./images/lowerLogo.svg" alt="logo" />
-        <section className={cls.lowerMenuBox}>
+        <HelpHeader className={cls.helpHeader} />
+        <section className={`${cls.lowerMenuBox}`}>
               <Link className={cls.menuLinks} to={''}> Home </Link>
               <Link 
                 onMouseEnter={handleExplore} 
@@ -45,6 +47,7 @@ export default function Header() {
           <section className={cls.iconBox}>
             <IoMdSearch className={cls.icon}></IoMdSearch>
             <IoMdNotifications className={cls.icon}></IoMdNotifications>
+            <IoIosMenu className={cls.icon}></IoIosMenu>
           </section>
         </section>
         <section className={cls.apearBoxes}>

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+.helpHeader {
+    position: relative;
+    .icons {
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .icon {
+            font-size: 25px;
+            &:nth-child(2) {
+                font-size: 35px;
+            }
+        }
+    }
+    .nav {
+        position: absolute;
+        top: 50px;
+        padding: 15px 0px 10px 20px;
+        left: -745px;
+        width: 810px;
+        display: none;
+        border-top: solid 2px #6366F1;
+        background: white;
+
+        .navTitle {
+            position: relative;
+            top: -5px;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+            color: black;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+    }
+
+    .navActive {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1001px) {
+    .helpHeader {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .helpHeader {
+        .nav {
+            left: -645px;
+            width: 703px;
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .helpHeader {
+        .nav {
+            left: -565px;
+            width: 625px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .helpHeader {
+        .nav {
+            left: -512px;
+            width: 571px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .helpHeader {
+        .nav {
+            left: -450px;
+            width: 510px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .helpHeader {
+        .nav {
+            left: -390px;
+            width: 450px;
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .helpHeader {
+        .nav {
+            left: -302px;
+            width: 360px;
+        }
+    }
+}
