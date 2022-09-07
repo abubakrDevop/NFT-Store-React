@@ -129,9 +129,11 @@
 
 @media (max-width: 414px) {
     .nftSeller {
+        position: relative;
+        top: -55px;
         padding: 0px 15px;
         .headTitle {
-            font-size: 30px;
+            font-size: 24px;
         }
         .flex {
             margin-top: 20px;
@@ -142,6 +144,9 @@
             width: 362px;
             .headImage {
                 height: 150px;
+            }
+            .button {
+                margin-top: 20px;
             }
         }   
     }

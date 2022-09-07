@@ -23,6 +23,7 @@
         display: none;
         border-top: solid 2px #6366F1;
         background: white;
+        z-index: 2;
 
         .navTitle {
             position: relative;
@@ -107,8 +108,8 @@
 @media (max-width: 414px) {
     .helpHeader {
         .nav {
-            left: -302px;
-            width: 360px;
+            left: -298px;
+            width: 358px;
         }
     }
 }

@@ -21,9 +21,12 @@ export default function HelpHeader() {
       <nav className={`${cls.nav} ${menuActive && cls.navActive}`}>
         <Link className={cls.navTitle} to={''}>Menu</Link>
         <Link className={cls.navTitle} to={''}>Explore</Link>
-        <Link className={cls.navTitle} to={''}>Pages</Link>
+        <Link className={cls.navTitle} to={''}>Colletion</Link>
+        <Link className={cls.navTitle} to={'/register'}>Register</Link>
+        <Link className={cls.navTitle} to={'/creator'}>Creator</Link>
+        <Link className={cls.navTitle} to={''}>Wallet</Link>
         <Link className={cls.navTitle} to={''}>Ranking</Link>
-        <Link className={cls.navTitle} to={''}>Contact</Link>
+        <Link className={cls.navTitle} to={'/contact'}>Contact</Link>
       </nav>
     </div> 
   )

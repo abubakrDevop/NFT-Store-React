@@ -60,6 +60,22 @@
 
 /* ----------- MEDIA ------------ */
 
-@media (max-width: 1000px) {
+@media (max-width: 414px) {
+    .category {
+        position: relative;
+        top: -50px;
+        padding: 0px 15px 0px 15px;
+        .headTitle {
+            margin-left: 11px;
+            font-size: 24px;
+        }
+        .cards {
+            padding: 20px 0px 0px 0px;
+            flex-wrap: nowrap;
     
+            .card {
+                width: 362px;
+            }
+        }
+    }
 }
